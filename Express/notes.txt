@@ -1,0 +1,12 @@
+express is a minimal and flexible for node js which is use to build web server and APIs .
+its simplyfies backend development by providing utilities for 
+for routing , middleware, request response handling and APIs development
+
+
+aap object
+        the object represents the complete express application it is used to define routes use
+        middlewares and configure settings
+        app(method,callback function)
+
+req.paramas
+    req.params gives url parameters

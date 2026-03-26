@@ -31,7 +31,17 @@ app.post("/div",(req,res)=>{
     const {a,b}=req.body;
     res.send(parseInt(a)/parseInt(b))
 })
-
+const add=[];
+app.post("addition",(req,res)=>{
+    
+    const a=req.body.a;
+    add.push(parseInt(a));
+    const sum=0;
+    for(let i=0;i<add.length;i++){
+        sum+=add[i];
+    }
+   res.send(JSON.stringify(add));
+})
 
 app.listen(5000,()=>{
     console.log("server running");
